@@ -33,6 +33,27 @@ console.log(typeof heros);
 console.log(typeof id);
 // All non-primitive types have object datatype and for function also known as function object
 
+// ******************************************
+
+// Stack(Primitive), Heap(Non-Primitive)
+
+let myName = "NIKHIL"
+let myPetName = myName
+myPetName = "NIKK"
+console.log(myName);
+console.log(myPetName);
+
+let userOne = {
+    email: "codernikk@gmail.com",
+    age: 21
+}
+let userTwo = userOne
+userTwo.age = 7
+console.log(userTwo.age);
+console.log(userOne.age);
+
+
+
 
 
 
