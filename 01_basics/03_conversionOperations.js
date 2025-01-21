@@ -22,9 +22,14 @@ console.log(booleanIsLoggedIn);
 // 1 => true, 0 => false, "" => false, "anycharOrString" => true
 
 let givenNum = 77
+let bool = false
+let boolString = String(bool)
 let StringNum = String(givenNum)
 console.log(typeof StringNum);
 console.log(StringNum);
+console.log(typeof boolString);
+console.log(boolString);
+
 
 // **********************  Operations ********************
 
