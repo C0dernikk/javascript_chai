@@ -1,5 +1,5 @@
-//const tinderUser = new Object()--> Singleton object
-const tinderUser = {}// --> Non singleton object
+//const tinderUser = new Object()--> Non Singleton object
+const tinderUser = {}// --> singleton object
 
 tinderUser.id = "2993nd"
 tinderUser.name = "jonny"
@@ -16,13 +16,14 @@ const regularUser = {
         }
     }
 }
-console.log(regularUser.fullname.userFullName.lastname);// ? is also used
+console.log(regularUser.fullname.userFullName.lastname);// ? is also used(optional chaining)
 
 const obj1 = {1: "a", 2: "b"}
-const obj2 = {3: "c", 4: "d"}
+const obj2 = {2: "e", 4: "d"}
 //const obj3 = {obj1, obj2}
-const obj3 = Object.assign({}, obj1, obj2)// {}--> this will be treated as target
+const obj3 = Object.assign({}, obj1, obj2)// {}--> this will be treated as target(and obj1 does not change)
 
+console.log(obj1);
 console.log(obj3);
 
 const obj4 = {...obj1, ...obj2}
@@ -40,12 +41,15 @@ const users = [
 
     }
 ]
+console.log(users[0].email);
+
 
 console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log((Object.entries(tinderUser)));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
 
 
 
