@@ -32,9 +32,10 @@ let res = loginUserMessage()// if not passed then act as undefined
 console.log(res);
 
 
-function calculateCartPrice(val1, val2, ...num1){// Rest and Spread operator
+function calculateCartPrice(val1, val2, ...num1){// Rest Operator
 return num1
 }
+// Collects remaining arguments passed
 console.log(calculateCartPrice(200, 300, 400, 2000));
 
 const user = {

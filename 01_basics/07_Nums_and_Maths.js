@@ -5,9 +5,9 @@ const balance = new Number(100)
 console.log(balance);
 
 console.log(balance.toString().length);// String prototypes being used by converting
-console.log(balance.toFixed(2));
+console.log(balance.toFixed(3));// Decimal places
 const otherNum = 123.873
-console.log(otherNum.toPrecision(1));
+console.log(otherNum.toPrecision(2));
 const hundreds = 10000000000
 console.log(hundreds.toLocaleString('en-IN'));
 // We can have everything about numbers by 'Number._____'

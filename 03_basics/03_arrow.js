@@ -17,7 +17,7 @@ const user = {
 // function chai(){
 //     let username = "nikhil"
 //     console.log(this.username);
-// }// Cant used in functions
+// }// Cant used in functions for accessing values as was in objects, but there is something present in this that can be used
 // chai()
 
 //Arrow function

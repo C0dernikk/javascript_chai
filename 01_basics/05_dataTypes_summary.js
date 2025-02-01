@@ -52,6 +52,12 @@ userTwo.age = 7
 console.log(userTwo.age);
 console.log(userOne.age);
 
+// let test = new String("NIKK")
+// console.log(test);
+// test = "MUSK" Reassigning changes it to primitive string 
+// console.log( typeof test);
+
+
 
 
 

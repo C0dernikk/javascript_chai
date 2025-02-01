@@ -19,7 +19,7 @@ console.log(instructor);
 
 //JSON(Javascript Object Notation)--> Used to store and send object(eg.api)
 
-// Object with no name
+// Object with no name --> API
 
 // {
 // "name": "nikk",

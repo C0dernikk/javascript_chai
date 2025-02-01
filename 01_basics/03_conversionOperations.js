@@ -20,6 +20,7 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 console.log( typeof booleanIsLoggedIn);
 console.log(booleanIsLoggedIn);
 // 1 => true, 0 => false, "" => false, "anycharOrString" => true
+// (num->bool)                     (string -> bool)
 
 let givenNum = 77
 let bool = false

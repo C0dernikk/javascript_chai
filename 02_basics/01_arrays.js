@@ -1,5 +1,5 @@
 const myArr = [0, 1, 2, 3, 4, 5]
-//It can have multiple datatypes in same array, are not associative, make shallow copies(same reference), resizeable
+//It can have multiple datatypes in same array, are not associative(cannot be accessed using arbitrary keys), make shallow copies(same reference), resizeable
 Heros = ["Batman", "IronMan", "Bheem"]
 const myArr2 = new Array(4, 6, 77)
 console.table([Heros, myArr, myArr2]);

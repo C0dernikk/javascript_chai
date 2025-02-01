@@ -11,6 +11,12 @@ const gameName = new String('Coder-nikk-master')
 // Stored as key value pair
 // This is a string object, both have access to methods but primitive one coverts into object if methods are used by autoboxing
 
+// Both string object and primitive string are immutable there content cannot be changed, in case of string object there reference is stored in a stack but string is present in heap
+
+// In string objects only property can be added or deleted and modified
+// For modifying some string's content make a new one
+console.log(typeof gameName);
+
 console.log(gameName);
 console.log(name.trim());// Methods used for primitive string
 
@@ -29,7 +35,7 @@ console.log(gameName.charAt(4));
 console.log(gameName.indexOf("e"));
 const newString = gameName.substring(0,5);
 console.log(newString);
-const anotherString = gameName.slice(-2,10);// If start index > end index then we get empty string
+const anotherString = gameName.slice(-8,10);// If start index > end index then we get empty string
 console.log(anotherString);
 
 const newStringOne = "    Irrelevant Spaces      "
@@ -41,8 +47,9 @@ const url = "https://nikhil.com/nikk%20gupta"
 
 console.log(url.replace('%20', '-'))
 console.log(url.includes('gupta'));
-
 console.log(gameName.split('-'));
+
+
 
 
 
