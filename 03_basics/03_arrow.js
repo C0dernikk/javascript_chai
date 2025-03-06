@@ -9,11 +9,10 @@ const user = {
     }
 }
 
-// user.welcomeMessage()
-// user.username = "sam"// context change
-// user.welcomeMessage()
-// console.log(this);// Current context is empty but for browser there is a global object(window)
-
+user.welcomeMessage()
+user.username = "sam"// context change
+user.welcomeMessage()
+console.log(this);// Current context is empty but for browser there is a global object(window)
 // function chai(){
 //     let username = "nikhil"
 //     console.log(this.username);
@@ -23,7 +22,7 @@ const user = {
 //Arrow function
 const chai = () => {
     let username = "nikhil"
-    console.log(this.username);
+    console.log(this);
 }
 chai()
 
@@ -49,3 +48,13 @@ const myArr = [2, 5, 1, 5]
 // myArr.forEach(() => {})
 // myArr.forEach(() => ())
 
+const func1 = function() {
+ console.log(this);
+ 
+}
+const func2 = () => {
+console.log(this);
+
+}
+func1()
+func2()

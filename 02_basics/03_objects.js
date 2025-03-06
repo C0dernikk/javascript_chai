@@ -1,4 +1,8 @@
-// Singleton (Not created using literals and created using constructor)
+// Singleton (Object Literal: Naturally supports Singleton pattern by creating a single instance and providing global access through a closure. It’s a straightforward approach for ensuring only one instance.
+
+//Constructor: By default, allows the creation of multiple instances. To implement Singleton behavior with a constructor, additional logic is needed to ensure only one instance is created and managed.
+
+//Thus, while object literals inherently create a single instance, constructors require extra steps to achieve the same Singleton behavior
 
 // Object.create --> using constructor
 
@@ -7,7 +11,7 @@
 const mySym = Symbol("123")
 const JSuser = {
     name: "Nikhil",
-    "Full Name": "Nikhil Gupta",//Can't be accessed through '.' operator
+    'Full Name': "Nikhil Gupta",//Can't be accessed through '.' operator, as there is space -- In JavaScript, dot notation (JSuser.key) only works for valid identifiers (letters, numbers, _, $).
     age: 21,
     [mySym]: "NewKey",// For using key as a symbol
     email: "xyz@india.com",
@@ -18,11 +22,11 @@ const JSuser = {
 
 console.log(JSuser.email);
 console.log(JSuser["email"]);
-console.log(JSuser["Full Name"]);
+console.log(JSuser['Full Name']);
 console.log(JSuser.mySym);// Jsuser.mySym is of string type(not used as symbol) when no []
 console.log(JSuser[mySym]);// For using key as symbol
 console.log(typeof mySym);
-console.log(typeof JSuser.mySym);
+console.log(typeof JSuser[mySym]);
 
 JSuser.email = "NIKK@legend.com"
 console.log(JSuser);

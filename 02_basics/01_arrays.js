@@ -19,7 +19,7 @@ console.log(myArr);
 console.log(myArr.includes(4));
 console.log(myArr.indexOf(3));
 
-const newArr = myArr.join()// converts to string
+const newArr = myArr.join('-')// converts to string
 
 console.log(myArr);
 console.log(newArr);
@@ -28,8 +28,7 @@ console.log(typeof newArr);
 // Slice, Splice
 
 console.log("A ", myArr);
-const myn1 = myArr.slice(1,3)// does not include 3( stores from 1 to 2)
-
+const myn1 = myArr.slice(1,3)// does not include 3( stores from 1 to 2), slice can have negative values
 console.log(myn1);
 console.log("B ", myArr);
 

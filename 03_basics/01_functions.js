@@ -21,7 +21,9 @@ function addTwoNum(number1, number2) {
 const result = addTwoNum(3,4)
 console.log("Result: ", result);
 
-function loginUserMessage(username="default"){   if(username === undefined){//!username--> since undefined is treated as false
+function loginUserMessage(username="default"){   
+    if(username === undefined){
+        //!username--> since undefined is treated as false
    console.log("Please enter a username");
    return
 }

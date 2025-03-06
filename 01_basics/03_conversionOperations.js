@@ -19,17 +19,27 @@ let isLoggedIn = "nikk"
 let booleanIsLoggedIn = Boolean(isLoggedIn)
 console.log( typeof booleanIsLoggedIn);
 console.log(booleanIsLoggedIn);
+console.log("Conversion from null or undefine to boolean");
+let valueNull = null
+let valueUndefine;
+console.log(Boolean(valueNull));
+console.log(Boolean(valueUndefine));
 // 1 => true, 0 => false, "" => false, "anycharOrString" => true
 // (num->bool)                     (string -> bool)
 
 let givenNum = 77
-let bool = false
+let bool = true 
 let boolString = String(bool)
 let StringNum = String(givenNum)
+
 console.log(typeof StringNum);
 console.log(StringNum);
 console.log(typeof boolString);
 console.log(boolString);
+console.log(String(valueNull));
+console.log(String(valueUndefine));
+
+
 
 
 // **********************  Operations ********************
@@ -43,7 +53,7 @@ console.log(2-2);
 console.log(2*2);
 console.log(4/2);
 console.log(7%3);
-console.log(2**3);
+console.log(2^3);
 
 let str1 = "Hello"
 let str2 = "Nikk"

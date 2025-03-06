@@ -35,12 +35,12 @@ if(true){
 
 // ********************* Interesting *****************
 
-addOne(4)// Execution before declaration possible
+console.log(addOne(4))// Execution before declaration possible
 function addOne(num){
 return num + 1
 }
 
-//Declaration and holding into a varible
+//Declaration and holding into a variable
 
 // addTwo(7) --> Not possible
 const addTwo = function(num){

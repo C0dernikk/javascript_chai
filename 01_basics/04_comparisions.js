@@ -5,8 +5,8 @@
 // console.log( 3 <= 9);
 // console.log( 1 < 3 );
 
-console.log( "2" >= 1);// not predictable output and hence we should avoid comparing different datatypes
-console.log( "03" > 2);// TypeScript does not allow this type of comparisions
+console.log( "2" == 2 );// not predictable output and hence we should avoid comparing different datatypes
+console.log( "03" > 2 );// TypeScript does not allow this type of comparisions
 
 console.log(null > 0 );
 console.log( null == 0 );

@@ -16,7 +16,7 @@ let isLoggedIn = false
 // object
 console.log(typeof "");
 console.log(typeof age);
-console.log(typeof null); // null is an object type
+console.log(typeof null); // null is a primitive datatype but dut to bug in js implementation it is classified as object, it cannot be fixed as code written would be broken
 console.log(typeof undefined);
 
 
