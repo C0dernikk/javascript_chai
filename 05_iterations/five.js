@@ -2,7 +2,6 @@ const coding = ['js', 'ruby', 'python', 'cpp']
 // callback is needed for forEach
 // coding.forEach( function (item){
 //     console.log(item);
-    
 // })
 
 // coding.forEach( (item) => {

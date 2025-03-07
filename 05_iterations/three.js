@@ -21,12 +21,13 @@ const map = new Map()
 map.set('IN', "India")
 map.set('US', "United states of America")
 map.set('AU', "Australia")
-
-// console.log(map);
+map.set(1, 35)
+console.log(map);
 
 for (const [key,value] of map) {
     console.log(key, ':-', value);
 }
+//Maps store the entries(key, value) and hence for of is working
 
 const myObj = {
     "game1": "NFS",

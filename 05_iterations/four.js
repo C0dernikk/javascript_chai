@@ -23,5 +23,5 @@ map.set('AU', "Australia")
 
 for (const key in map) {
   console.log(key);
-}// Map is not iterable and hence no value printed and no error
+}// Map cannot be broken with keys and hence not possible
 
