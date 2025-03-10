@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai</title>
+
+</head>
+<body style="background-color: #212121;color: white;">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+</body>
+<script>
+function addLang(languageName){
+const newLang = document.createElement('li')
+newLang.innerText = `${languageName}`
+document.querySelector('.language').appendChild(newLang)
+}
+addLang('C++')
+addLang('Rust')
+function addOptiLang(languageName){
+  const newLang = document.createElement('li');
+  newLang.appendChild(document.createTextNode(languageName));
+  document.querySelector('.language').appendChild(newLang);
+}
+addOptiLang('Python');
+
+//Edit
+const secondLang = document.querySelector("li:nth-child(2)")
+// secondLang.innerHTML = "Mojo"
+const li = document.createElement('li')
+li.textContent = "Mojo"// similar to innerHTML in terms of time complexity
+secondLang.replaceWith(li)
+
+const firstLang = document.querySelector('li:first-child');
+firstLang.outerHTML = "<li>TypeScript</li>"
+
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+
+</script>
+</html>
