@@ -1,8 +1,8 @@
 # Projects related to DOM
 
-## Project link
+## Project link for practice
 [Click Here](https://dom-project-chaiaurcode.stackblitz.io)
-# Solution code
+# Solution codes :
 ## Project 1
 
 ```javascript
@@ -64,4 +64,13 @@ newElement.appendChild(document.createTextNode(inference));
 parent_inference.appendChild(newElement);
 
 });
+```
+## Project 3
+```javascript
+const clock = document.querySelector('#clock');
+
+setInterval(function(){
+  let date = new Date()
+  clock.innerText = date.toLocaleTimeString()
+}, 1000)
 ```
