@@ -256,3 +256,92 @@ function newGame(){
   })
 }
 ```
+
+## Project 5 solution (My version)
+
+```javascript
+const startButn = document.querySelector('#start')
+const stopButn = document.querySelector('#stop')
+const bodyy = document.querySelector('body')
+
+function randomColor(){
+  let hexx = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+  let color = '#';
+  for(let i = 0; i < 6; i++){
+    color += hexx[Math.floor(Math.random() * 16)];
+  }
+  
+  return color;
+}
+let reff;
+startButn.addEventListener('click', function(){
+  reff = setInterval(function(){
+         let newColor = randomColor();
+         bodyy.style.backgroundColor = newColor;
+  }, 1000);
+  // Disable after one click
+  startButn.setAttribute('disabled', '');
+});
+
+stopButn.addEventListener('click', function(){
+  clearInterval(reff);
+  startButn.removeAttribute('disabled');
+})
+```
+
+## Project 5 Solution
+
+```javascript
+const startButn = document.querySelector('#start');
+const stopButn = document.querySelector('#stop');
+const bodyy = document.querySelector('body');
+
+function randomColor() {
+  let hexx = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hexx[Math.floor(Math.random() * 16)];
+  }
+
+  return color;
+}
+let reff;
+startButn.addEventListener('click', function () {
+  // Check for whether there is value or not
+  if (!reff) {
+    reff = setInterval(function () {
+      let newColor = randomColor();
+      bodyy.style.backgroundColor = newColor;
+    }, 1000);
+  }
+});
+
+stopButn.addEventListener('click', function () {
+  clearInterval(reff);
+  reff = null;
+});
+
+```
+
+## Project 6
+
+```javascript
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+  <table>
+    <tr>
+      <th>Key</th>
+      <th>KeyCode</th>
+      <th>Code</th>
+    </tr>
+    <tr>
+      <td>${e.key === ' ' ? 'Space' : e.key}</td>
+      <td>${e.keyCode}</td>
+      <td>${e.code}</td>
+    </tr>
+  </table>
+  `
+})
+```
