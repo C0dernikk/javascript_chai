@@ -37,7 +37,6 @@ const newString = gameName.substring(0,5);
 console.log(newString);
 const anotherString = gameName.slice(-8,11);// If start index > end index then we get empty string
 console.log(anotherString);
-
 const newStringOne = "    Irrelevant Spaces      "
 console.log(newStringOne);
 console.log(newStringOne.trim());

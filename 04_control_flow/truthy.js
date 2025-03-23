@@ -33,9 +33,7 @@ let val1;
 // val1 = undefined ?? 14
 val1 = null ?? undefined ?? 3 ?? 5
 console.log((val1));
-
 //Ternary operator
-
 const iceTeaPrice = 100
 
 iceTeaPrice <= 80 ? console.log("Less than 80") : console.log("Greater than 80")

@@ -1,14 +1,26 @@
 //Immediately invoked function
 let num = 10;
+
+function chai(){                                         
+    //also function chai()-- valid
+    //Named iife
+    var num = 13;
+    console.log(`DB CONNECTED ${num}`);
+}
+
+chai();
+
 (function chai(){ //also function chai()-- valid
     //Named iife
-    let num = 11
+    let num = 11;
     console.log(`DB CONNECTED ${num}`);
-})();//To avoid pollution by global scope we use iife as it is iife, (expilcit ; required)
+})();
+//To avoid pollution by global scope we use iife as it is iife, (expilcit ; required)
 
 //Unnamed iife, using arrow func
 ((name) => {
-    let num = 12
+    let num = 12;
     console.log(`DB CONNECTED 2 ${name}, ${num}`);
     
 })('AWS');
+// Normal function's definition does not get deleted even after usage but iife get's deleted --> hence choose according to number of execution required. As both does not pollute global scope due to functional scope.

@@ -11,18 +11,19 @@ const user = {
 
 user.welcomeMessage()
 user.username = "sam"// context change
-user.welcomeMessage()
+user.welcomeMessage();
 console.log(this);// Current context is empty but for browser there is a global object(window)
-// function chai(){
-//     let username = "nikhil"
-//     console.log(this.username);
-// }// Cant used in functions for accessing values as was in objects, but there is something present in this that can be used
-// chai()
+function chai1(){
+    let username = "nikhil";
+    console.log(`inside chai1`, this.username);
+    
+}// Cant used in functions for accessing values as was in objects, but there is something present in this that can be used
+chai1()
 
 //Arrow function
 const chai = () => {
     let username = "nikhil"
-    console.log(this);
+    console.log(`Inside arrow function chai`, this.username);
 }
 chai()
 
@@ -31,10 +32,10 @@ chai()
 // } Explicit return
 
 // const addTwo = (num1, num2) => num1 + num2
-const addTwo = (num1, num2) => (num1 + num2)
+// const addTwo = (num1, num2) => (num1 + num2)
 // Implicit return(No return required)-->
 
-console.log(addTwo(3, 4))
+// console.log(addTwo(3, 4))
 
 //Object return
 
@@ -52,6 +53,7 @@ const func1 = function() {
  console.log(this);
  
 }
+
 const func2 = () => {
 console.log(this);
 

@@ -7,11 +7,13 @@ console.log(balance);
 console.log(balance.toString().length);// String prototypes being used by converting
 console.log(balance.toFixed(3));// Decimal places
 const otherNum = 123.873
-console.log(otherNum.toPrecision(2));
+console.log(otherNum.toPrecision(3));
 const hundreds = 10000000000
 console.log(hundreds.toLocaleString('en-IN'));
 // We can have everything about numbers by 'Number._____'
 console.log(Number.MAX_SAFE_INTEGER);
+
+
 
 
 // ********************************** MATHS ***********************

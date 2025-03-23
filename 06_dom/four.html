@@ -31,13 +31,14 @@ const secondLang = document.querySelector("li:nth-child(2)")
 // secondLang.innerHTML = "Mojo"
 const li = document.createElement('li')
 li.textContent = "Mojo"// similar to innerHTML in terms of time complexity
-secondLang.replaceWith(li)
+secondLang.replaceChildren
 
 const firstLang = document.querySelector('li:first-child');
 firstLang.outerHTML = "<li>TypeScript</li>"
 
 const lastLang = document.querySelector('li:last-child')
 lastLang.remove()
-
+// parent.replaceChild(newChild, oldChild);
+//parent.replaceChildren(newItem1, newItem2, newItem3) -- removes all child and adds the given, and if nothing given then removes all child
 </script>
 </html>

@@ -58,6 +58,7 @@ console.log(newString);
 
 let test = new String("NIKK")
 console.log(test);
+
 // test = "MUSK" Reassigning changes it to primitive string 
 // console.log( typeof test);
 

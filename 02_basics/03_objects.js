@@ -11,18 +11,25 @@
 const mySym = Symbol("123")
 const JSuser = {
     name: "Nikhil",
-    'Full Name': "Nikhil Gupta",//Can't be accessed through '.' operator, as there is space -- In JavaScript, dot notation (JSuser.key) only works for valid identifiers (letters, numbers, _, $).
+    'Full Name': 'Nikk',
+    'Full_Name': "Nikhil Gupta",//Can't be accessed through '.' operator, as there is space -- In JavaScript, dot notation (JSuser.key) only works for valid identifiers (letters, numbers, _, $).
     age: 21,
     [mySym]: "NewKey",// For using key as a symbol
     email: "xyz@india.com",
     location: "Bhagalpur",
     isLoggedIn: false,
-    lastLoginDays: ["Mon", "Wed"]
+    lastLoginDays: ["Mon", "Wed"],
+    getData: function Dataa(){
+        console.log(this.name, this.email);
+        
+    }
 }
 
 console.log(JSuser.email);
-console.log(JSuser["email"]);
+console.log(JSuser['email']);
+console.log(JSuser.Full_Name);
 console.log(JSuser['Full Name']);
+
 console.log(JSuser.mySym);// Jsuser.mySym is of string type(not used as symbol) when no []
 console.log(JSuser[mySym]);// For using key as symbol
 console.log(typeof mySym);
@@ -36,14 +43,16 @@ JSuser.email = "NIKK@micro.com"
 
 console.log(JSuser);
 
-JSuser.greeting = function(){
+JSuser.greeting = function g1(){
     console.log("Hello Js user");
 }
-JSuser.greeting2 = function(){
+JSuser.greeting2 = function g2(){
     console.log(`Hello Js user, ${this.name}`);
 }
 JSuser.greeting()
 JSuser.greeting2()
+
+console.log(JSuser);
 
 
 

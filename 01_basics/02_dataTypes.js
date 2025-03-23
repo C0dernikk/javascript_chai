@@ -3,7 +3,6 @@
 console.log(3 
     + 2)   // code readabililty should be high
 console.log("NIKK")
-
 let name= "NIKK"
 let age= 21
 let isLoggedIn = false

@@ -19,6 +19,7 @@ console.log( undefined == 0 );
 // We avoid ambigiuos types of comparisions for clean code
 // === Strict Check
 console.log( "2" === 2 );
+console.log(null == undefined);//Exceptional case --> Js treats them equal
 
 
 

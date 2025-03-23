@@ -1,6 +1,7 @@
 let score = "37"
 
 // const {score} = req.body --> takes input in score but datatype is not clear to us
+// req is object and score is property
 
 console.log(typeof score);
 console.log(typeof (score));
@@ -38,6 +39,13 @@ console.log(typeof boolString);
 console.log(boolString);
 console.log(String(valueNull));
 console.log(String(valueUndefine));
+console.log('Symbol to (bool, number, string)');
+const mySym_str = Symbol();
+const mySym_num = Symbol(123);
+console.log(mySym_num, mySym_str, String(mySym_num), String(mySym_str), Boolean(mySym_num), Boolean(mySym_str));
+
+
+
 
 
 
@@ -63,7 +71,7 @@ console.log("1" + 2);
 console.log(1 + "2");
 console.log( 2 + 2 + "4");
 console.log( "4" + 5 + 6);
-console.log( 3 + 4 + "7" + 1);
+console.log( 3 + 4 + "7" + 1);// Left to right evaluation occurs
 // use parantheses and not think much about precedences
 console.log( (3+7) * 4 % 7);
 

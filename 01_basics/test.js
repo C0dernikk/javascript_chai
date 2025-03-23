@@ -1,1 +1,1 @@
-console.log("NIKK")
+console.log(this)

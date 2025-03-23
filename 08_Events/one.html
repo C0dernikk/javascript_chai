@@ -7,7 +7,7 @@
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
-    <div >
+    <div>
         <ul id="images">
             <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
             <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
@@ -31,28 +31,31 @@
 //   alert('Owl');
 // }, false)
 
-// attachEvent(), jQuert - on --> used in previous days
+// attachEvent(), jQuery - on --> used in previous days
 
 // document.getElementById('owl').addEventListener('click', function (e){
 //   console.log(e);// Event object has browser and environment events
 // }, false)
 
-/* Events to remember => type, timestamp, preventDefault, target, toElement, srcElement, currentTarget, clientX, clientY, screenX, screenY, altket, ctrlkey, shiftkey, keycode
+/* Events to remember => type, timestamp, preventDefault, target, toElement, srcElement, currentTarget, clientX, clientY, screenX, screenY, altkey, ctrlkey, shiftkey, keycode
 */
 
 // document.getElementById('images').addEventListener('click', function(e){
 //   console.log('Clicked inside the ul')
 // });
+
 // false => Bubbling mode(Propagating Up), true => Capturing mode(Propagating Down)
+
 // document.getElementById('owl').addEventListener('click', function(e){
 //   console.log('Clicked owl');
 //   e.stopPropagation();
 // });
 
-// document.getElementById('google').addEventListener('click', function(e){
-//   console.log('Google clicked')
-// e.preventDefault();
-// },false)
+
+//  document.getElementById('google').addEventListener('click', function(e){
+//    console.log('Google clicked')
+//  e.preventDefault();
+//  },false);
 
 document.querySelector('#images').addEventListener('click', function(e){
   if(e.target.tagName === 'IMG'){
