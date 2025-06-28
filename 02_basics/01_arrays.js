@@ -10,9 +10,11 @@ console.log(myArr);
 myArr.pop()
 console.log(myArr);
 
-myArr.unshift(4)
+let sz_returned = myArr.unshift(4)
+console.log(sz_returned);
 console.log(myArr);
-myArr.shift()
+let element_returned = myArr.shift()
+console.log(element_returned);
 console.log(myArr);
 
 console.log(myArr.includes(4));
