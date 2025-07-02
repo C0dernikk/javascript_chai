@@ -28,7 +28,7 @@ for (const [key,value] of map) {
     console.log(key, ':-', value);
 }
 //Maps store the entries(key, value) and hence for of is working
-
+// Works on iterable objects - string, array, set, map
 const myObj = {
     "game1": "NFS",
     "game2": "FIFA",
@@ -37,8 +37,8 @@ const myObj = {
  
 // Objects are not iterable
 
- for (const [key, value] of myObj) {
-    console.log(key);
- }
+//  for (const [key, value] of myObj) {
+//     console.log(key);
+//  }
 
 

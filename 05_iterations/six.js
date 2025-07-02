@@ -10,9 +10,19 @@ const coding = ['js', 'ruby', 'java', 'python', 'cpp']
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 const val = myNums.filter((item) => (item > 5))
+
+// Mechanism:
+// The callback returns a boolean (true/false) for each element
+
+// filter() includes the element in the new array only if the callback returns true
+
+// It doesn't return the booleans - it returns the values that passed the test
+
 console.log(val);
 
+
 //Using forEach
+
 const newNums = []
 myNums.forEach((item) => {
 if(item > 5){
@@ -35,13 +45,13 @@ const books = [
 
   let userBooks = books.filter((item) => (item.genre === 'History'))
 
-  userBooks = books.filter((item) => (item.publish >= 1990))
+//   userBooks = books.filter((item) => (item.publish >= 1990))
   console.log(userBooks);
 
   const myNumers = myNums
  
   const newNumers = myNumers.map((num) => (num+10))
-  console.log(newNumers);
+  console.log(newNumers, myNumers);
 
   const chainedNum = myNumers.map((item) => (item * 10)).map((item) => (item + 1)).filter((item) => (item > 50))
 

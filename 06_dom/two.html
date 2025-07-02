@@ -37,7 +37,12 @@
     // console.log(dayone.nextElementSibling);// Ignores text nodes
     console.log(parent.childNodes);// Gives a nodeList having all the nodes
     
-    
+//     Approach	    NodeList HTMLCollection	        Notes
+// for loop	          ✅	          ✅	       Works everywhere
+// Array.from()	      ✅	          ✅	       Convert, then use array methods
+// [...obj] spread	  ✅	          ✅	       Clean, modern
+// for...of	          ✅	          ✅	       Simple, readable
+// forEach()	      ✅	          ❌	       Only NodeList supports it
     
     
     

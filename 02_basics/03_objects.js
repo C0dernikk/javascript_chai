@@ -9,8 +9,10 @@
 // Object Literals  (The only difference is of Singleton)
 
 const mySym = Symbol("123")
+let num = 12
 const JSuser = {
     name: "Nikhil",
+    [num] : "143",
     'Full Name': 'Nikk',
     'Full_Name': "Nikhil Gupta",//Can't be accessed through '.' operator, as there is space -- In JavaScript, dot notation (JSuser.key) only works for valid identifiers (letters, numbers, _, $).
     age: 21,
@@ -19,16 +21,17 @@ const JSuser = {
     location: "Bhagalpur",
     isLoggedIn: false,
     lastLoginDays: ["Mon", "Wed"],
-    getData: function Dataa(){
+    getData: function (){
         console.log(this.name, this.email);
         
     }
 }
 
+
 console.log(JSuser.email);
 console.log(JSuser['email']);
 console.log(JSuser.Full_Name);
-console.log(JSuser['Full Name']);
+console.log(JSuser["Full Name"]);
 
 console.log(JSuser.mySym);// Jsuser.mySym is of string type(not used as symbol) when no []
 console.log(JSuser[mySym]);// For using key as symbol

@@ -21,7 +21,7 @@ console.log(regularUser.fullname.userFullName.lastname);// ? is also used(option
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {2: "e", 4: "d"}
 const obj5 = {7: "e", 8: "d"}
-//const obj3 = {obj1, obj2}
+// const obj3 = {obj1, obj2}
 const obj3 = Object.assign({}, obj1, obj2, obj5)// {}--> this will be treated as target(and obj1 does not change)
 
 console.log(obj1);

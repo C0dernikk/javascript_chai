@@ -44,6 +44,7 @@ const user = {
     username: "Nikhil",
     price: 9999
 }
+
 function handleObject(anyObject){
 console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
 }

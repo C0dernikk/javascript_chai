@@ -8,7 +8,7 @@ let myArray = ["shinchan", "gian", "kira"]
 
 let arr_ind = 0
 while (arr_ind < myArray.length) {
-    // console.log(`Value is ${myArray[arr_ind]}`);
+    console.log(`Value is ${myArray[arr_ind]}`);
     arr_ind++;
 }
 

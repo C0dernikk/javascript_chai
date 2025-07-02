@@ -6,7 +6,7 @@ const dc_heros = ["superman", "flash", "batman"]
 // console.log(marvel_heros[3][2]);
 
 const all_heros = marvel_heros.concat(dc_heros)// Returns a new array
-// console.log(all_heros);
+console.log(all_heros);
 
 const spreaded_arr = [...marvel_heros, ...dc_heros]
 console.log(spreaded_arr);// More convenient than concat

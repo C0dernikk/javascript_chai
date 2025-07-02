@@ -60,3 +60,9 @@ console.log(this);
 }
 func1()
 func2()
+
+// Object methods: this → object itself.
+
+// Regular functions: this → global object.
+
+// Arrow functions: this → outer (lexical) scope.

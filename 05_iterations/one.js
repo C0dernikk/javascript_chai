@@ -10,15 +10,15 @@ for (let index = 0; index < 10; index++) {
     
 }
 
-// for(let i = 1; i <= 5; i++){
-//     console.log(`Outer loop value: ${i}`);
+for(let i = 1; i <= 5; i++){
+    console.log(`Outer loop value: ${i}`);
     
-//     for(let j = 1; j <= 10; j++){
-//         // console.log(`Inner looop value: ${j}`);
-//         console.log(`${i} * ${j} = ${i*j}`);
+    for(let j = 1; j <= 10; j++){
+        // console.log(`Inner looop value: ${j}`);
+        console.log(`${i} * ${j} = ${i*j}`);
         
-//     }
-// }
+    }
+}
 
 let myArray = ["flash", "batman", "superman"]
 for(let index = 0; index < myArray.length; index++){

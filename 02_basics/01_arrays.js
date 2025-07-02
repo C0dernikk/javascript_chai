@@ -28,6 +28,7 @@ console.log(newArr);
 console.log(typeof newArr);
 
 // Slice, Splice
+console.log("slice");
 
 console.log("A ", myArr);
 const myn1 = myArr.slice(-4,-2)// does not include 3( stores from 1 to 2), slice can have negative values
@@ -38,7 +39,20 @@ const myn2 = myArr.splice(1,3)// includes 3 and changes original array(deletes t
 console.log("C ", myArr);
 console.log(myn2);
 
+const addAtLast = [ 1, 3, 5, 6];
+addAtLast[6] = 10;
+console.log(addAtLast);
 
+
+// 1. Primitives (Numbers, Strings, Booleans, etc.)
+// ✅ Truly copied by value (independent in the new array)
+
+// Modifying them in the copy does not affect the original.
+
+// 2. Non-Primitives (Objects, Arrays, Functions, etc.)
+// ❌ Copied by reference (shared between original and copy)
+
+// Modifying them in the copy also affects the original.
 
 
 

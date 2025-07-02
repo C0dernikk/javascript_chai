@@ -23,4 +23,4 @@ chai();
     console.log(`DB CONNECTED 2 ${name}, ${num}`);
     
 })('AWS');
-// Normal function's definition does not get deleted even after usage but iife get's deleted --> hence choose according to number of execution required. As both does not pollute global scope due to functional scope.
+// Normal function's definition does not get deleted even after usage but iife get's deleted --> hence choose according to number of execution required. Regualar function does pollute if it is defined in a global scope, while iife does not pollutes.
