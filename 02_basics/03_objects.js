@@ -27,11 +27,20 @@ const JSuser = {
     }
 }
 
+// 1. key: value this key can be accessed using (.) as well as using square brackets ['key'] (key does not have space inside it)
+// 2. "key": value this key can be accessed using (.) as well as using square brackets ['key'] (key does not have space inside it)
+// 3. "key 1": value this key can be accessed using ['key 1] only
+// 4. [key]: value this can only be accessed using [key]
 
 console.log(JSuser.email);
 console.log(JSuser['email']);
 console.log(JSuser.Full_Name);
+console.log(JSuser["Full_Name"]);
 console.log(JSuser["Full Name"]);
+console.log(JSuser[num]);
+console.log(JSuser["12"]);
+console.log(JSuser[12]);
+
 
 console.log(JSuser.mySym);// Jsuser.mySym is of string type(not used as symbol) when no []
 console.log(JSuser[mySym]);// For using key as symbol

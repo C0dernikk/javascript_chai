@@ -5,7 +5,6 @@ const user = {
     welcomeMessage: function(){
         console.log(`${this.username}, welcome to website`);// For current context (this)
         console.log(this);
-        
     }
 }
 
@@ -51,12 +50,10 @@ const myArr = [2, 5, 1, 5]
 
 const func1 = function() {
  console.log(this);
- 
 }
 
 const func2 = () => {
 console.log(this);
-
 }
 func1()
 func2()

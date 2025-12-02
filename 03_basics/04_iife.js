@@ -24,3 +24,11 @@ chai();
     
 })('AWS');
 // Normal function's definition does not get deleted even after usage but iife get's deleted --> hence choose according to number of execution required. Regualar function does pollute if it is defined in a global scope, while iife does not pollutes.
+
+// IIFE = a function that runs immediately.
+
+// ✔ Prevents global variable pollution
+// ✔ Creates private scope
+// ✔ Runs setup code automatically
+// ✔ Avoids naming conflicts
+// ✔ Used a lot before ES6 (now less common but still useful)

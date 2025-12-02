@@ -20,6 +20,13 @@ console.log( undefined == 0 );
 // === Strict Check
 console.log( "2" === 2 );
 console.log(null == undefined);//Exceptional case --> Js treats them equal
+console.log(null === undefined);
+
+console.log(NaN == NaN);
+console.log(NaN === NaN);
+// use Number.isNaN(x) to check if NaN
+
+
 
 
 

@@ -47,6 +47,12 @@ const addTwo = function(num){
     return num + 2
 }
 
+// Hoisting - JavaScript moves declarations to the top of the scope before executing the code.
+
+// ✔ Only declarations are hoisted
+// ❌ Assignments/initializations are NOT
+// ✔ Different types of variables/functions behave differently
+
 
 
 

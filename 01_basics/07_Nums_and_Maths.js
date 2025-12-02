@@ -5,15 +5,13 @@ const balance = new Number(100)
 console.log(balance);
 
 console.log(balance.toString().length);// String prototypes being used by converting
-console.log(balance.toFixed(3));// Decimal places
+console.log(balance.toFixed(3));// n digits after decimal places works like (fixed + setprecision of c++)
 const otherNum = 123.873
-console.log(otherNum.toPrecision(3));
+console.log(otherNum.toPrecision(3));// n significant digits like setprecision of c++
 const hundreds = 10000000000
 console.log(hundreds.toLocaleString('en-IN'));
 // We can have everything about numbers by 'Number._____'
 console.log(Number.MAX_SAFE_INTEGER);
-
-
 
 
 // ********************************** MATHS ***********************

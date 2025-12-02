@@ -19,7 +19,7 @@ console.log(multi_flatted);
 console.log(Array.isArray("NIKK"));
 console.log(Array.from("NIKK"));
 console.log(Array.from({name : "Nikhil"}));//Not directly convertable and gives empty array --> We have to declare how to make array by keys or value
-
+//Iterable objects - array, string, set, map
 let score1= 1
 let score2 = 3
 let score3 = 6

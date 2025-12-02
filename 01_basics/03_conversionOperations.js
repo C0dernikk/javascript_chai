@@ -32,10 +32,13 @@ let givenNum = 77
 let bool = true 
 let boolString = String(bool)
 let StringNum = String(givenNum)
+let boolnum = 1
 
 console.log(typeof StringNum);
 console.log(StringNum);
 console.log(typeof boolString);
+console.log(typeof String(boolnum));
+console.log(String(boolnum));
 console.log(boolString);
 console.log(String(valueNull));
 console.log(String(valueUndefine));
