@@ -19,6 +19,7 @@ const val = myNums.filter((item) => (item > 5))
 // It doesn't return the booleans - it returns the values that passed the test
 
 console.log(val);
+console.log(typeof val);
 
 
 //Using forEach
@@ -104,7 +105,10 @@ shoppingCart.forEach((item) => {
 
 console.log(add_forof, add_forin, add_forEach);
 
-
+// Type	Use These Loops
+// String	for, for…of
+// Array	for, for…of, forEach, map, filter, reduce
+// Object	for…in, Object.keys(), Object.entries()
 
 
 

@@ -28,6 +28,7 @@ for (const [key,value] of map) {
     console.log(key, ':-', value);
 }
 //Maps store the entries(key, value) and hence for of is working
+
 // Works on iterable objects - string, array, set, map
 const myObj = {
     "game1": "NFS",

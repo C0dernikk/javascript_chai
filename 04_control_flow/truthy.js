@@ -7,11 +7,12 @@
 //     console.log("Don't have user email");
     
 // }
-// //Falsy values --> Values which are False
-// // false, 0, -0, BigInt 0n, "", null, undefined, NaN
+// Falsy values --> Values which are False
+// false, 0, -0, BigInt 0n, "", null, undefined, NaN
+//Except above falsy values, all are considered truthy
 
-// //Truthy values --> Values which are True
-// // "0", 'false', " ", [], {}, function(){} = Empty function
+// Truthy values --> Values which are True
+// Eg. "0", 'false', " ", [], {}, function(){} = Empty function
 
 // const userArr = []
 // if(userArr.length === 0){

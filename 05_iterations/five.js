@@ -6,7 +6,6 @@ const coding = ['js', 'ruby', 'python', 'cpp']
 
 // coding.forEach( (item) => {
 //    console.log(item);
-   
 // })
 
 function printMe(item){
@@ -18,7 +17,6 @@ function printMe(item){
 // forEach has access to 3 parameters (item, index, arr)
 coding.forEach( (item, index, arr) => {
     // console.log(item, index, arr);
-    
 })
 
 const myCoding = [
